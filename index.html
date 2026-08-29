@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nova AI Chat</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <aside class="sidebar">
+      <div class="brand"><span>✦</span> Nova AI</div>
+      <button id="newChat" class="new-chat">＋ New chat</button>
+      <div class="history"><p>Today</p><button class="history-item">AI UI Demo</button></div>
+      <div class="sidebar-footer">Demo UI • No API required</div>
+    </aside>
+
+    <section class="chat">
+      <header class="topbar"><div><strong>Nova Assistant</strong><small>Online • Demo mode</small></div><button id="clear" title="Clear chat">⌫</button></header>
+      <div id="messages" class="messages">
+        <div class="message assistant"><div class="avatar">✦</div><div><div class="bubble">Hey! 👋 I'm Nova. Ask me anything — this is a front-end AI chat demo.</div><span class="time">Just now</span></div></div>
+      </div>
+      <form id="composer" class="composer">
+        <textarea id="input" rows="1" placeholder="Message Nova..." autocomplete="off"></textarea>
+        <button type="submit" aria-label="Send">➤</button>
+      </form>
+      <div class="hint">Nova can make mistakes. This demo uses simulated responses.</div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
